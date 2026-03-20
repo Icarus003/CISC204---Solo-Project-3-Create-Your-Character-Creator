@@ -1,6 +1,9 @@
 [gd_scene format=3 uid="uid://bpupchlarrosi"]
 
+[ext_resource type="Script" uid="uid://bxjalarhbsd7s" path="res://Scripts/main.gd" id="1_jjgbg"]
+
 [node name="Main" type="Node2D" unique_id=268473661]
+script = ExtResource("1_jjgbg")
 
 [node name="Buttons" type="Node" parent="." unique_id=1522756435]
 
@@ -40,3 +43,10 @@ offset_top = 105.0
 offset_right = 288.0
 offset_bottom = 136.0
 text = "Legs Forward"
+
+[connection signal="pressed" from="Buttons/HairBack" to="." method="_on_hair_back_pressed"]
+[connection signal="pressed" from="Buttons/HairForward" to="." method="_on_hair_forward_pressed"]
+[connection signal="pressed" from="Buttons/TorsoBack" to="." method="_on_torso_back_pressed"]
+[connection signal="pressed" from="Buttons/TorsoForward" to="." method="_on_torso_forward_pressed"]
+[connection signal="pressed" from="Buttons/LegsBack" to="." method="_on_legs_back_pressed"]
+[connection signal="pressed" from="Buttons/LegsForward" to="." method="_on_legs_forward_pressed"]
