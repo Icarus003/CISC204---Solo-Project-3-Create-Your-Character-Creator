@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://secg2exymta7"
-path="res://.godot/imported/sheet_hair.png-b6ffd0d0a96bed66e5a98d2f95e18897.ctex"
+uid="uid://48xlu56ahb7u"
+path="res://.godot/imported/GreenBed.png-3069cdaa2890bc6f93a02a77e7c2403d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/sheet_hair.png"
-dest_files=["res://.godot/imported/sheet_hair.png-b6ffd0d0a96bed66e5a98d2f95e18897.ctex"]
+source_file="res://Assets/GreenBed.png"
+dest_files=["res://.godot/imported/GreenBed.png-3069cdaa2890bc6f93a02a77e7c2403d.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://eokfxywagyll"
-path="res://.godot/imported/sheet_pants.png-2108db313f9eaad6de0d8607bc4704a2.ctex"
+uid="uid://bv32jkk7eahxv"
+path="res://.godot/imported/Room_outline.png-dae406b73628123fd6855a71da3cdfaa.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/sheet_pants.png"
-dest_files=["res://.godot/imported/sheet_pants.png-2108db313f9eaad6de0d8607bc4704a2.ctex"]
+source_file="res://Assets/Room_outline.png"
+dest_files=["res://.godot/imported/Room_outline.png-dae406b73628123fd6855a71da3cdfaa.ctex"]
 
 [params]
 

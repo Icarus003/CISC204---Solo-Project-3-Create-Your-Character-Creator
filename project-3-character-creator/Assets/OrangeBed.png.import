@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://j05lkjafk1u2"
-path="res://.godot/imported/sheet_face.png-2f592434b0b1b8b7b8e5e1a11813212c.ctex"
+uid="uid://dhud8akn0cvgq"
+path="res://.godot/imported/OrangeBed.png-ef853f3fd36d434bdecdefb41511e522.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/sheet_face.png"
-dest_files=["res://.godot/imported/sheet_face.png-2f592434b0b1b8b7b8e5e1a11813212c.ctex"]
+source_file="res://Assets/OrangeBed.png"
+dest_files=["res://.godot/imported/OrangeBed.png-ef853f3fd36d434bdecdefb41511e522.ctex"]
 
 [params]
 

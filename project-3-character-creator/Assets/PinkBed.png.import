@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cmwvg45e0p6qg"
-path="res://.godot/imported/sheet_shoes.png-b5120ea6c751b54f64c7a3e681ed033b.ctex"
+uid="uid://blq2ooax42t1l"
+path="res://.godot/imported/PinkBed.png-03234da3bc8e66c80e11a3b2f8317e92.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/sheet_shoes.png"
-dest_files=["res://.godot/imported/sheet_shoes.png-b5120ea6c751b54f64c7a3e681ed033b.ctex"]
+source_file="res://Assets/PinkBed.png"
+dest_files=["res://.godot/imported/PinkBed.png-03234da3bc8e66c80e11a3b2f8317e92.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d3v3bvjyr3hqt"
-path="res://.godot/imported/sheet_skin.png-bcc18deae3dfb52e702da933681399c2.ctex"
+uid="uid://v4iyilot330v"
+path="res://.godot/imported/PurpleBed.png-2b4a9f49689ea9767dbf6063f176a5c4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/sheet_skin.png"
-dest_files=["res://.godot/imported/sheet_skin.png-bcc18deae3dfb52e702da933681399c2.ctex"]
+source_file="res://Assets/PurpleBed.png"
+dest_files=["res://.godot/imported/PurpleBed.png-2b4a9f49689ea9767dbf6063f176a5c4.ctex"]
 
 [params]
 

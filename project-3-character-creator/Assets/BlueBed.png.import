@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://hj6bgsy0uhuc"
-path="res://.godot/imported/sheet_shirts.png-3b001bce489ca354303465350793bd17.ctex"
+uid="uid://duvgqgwhk5fa7"
+path="res://.godot/imported/BlueBed.png-1e11b36322895bf37d8194cf0318b545.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/sheet_shirts.png"
-dest_files=["res://.godot/imported/sheet_shirts.png-3b001bce489ca354303465350793bd17.ctex"]
+source_file="res://Assets/BlueBed.png"
+dest_files=["res://.godot/imported/BlueBed.png-1e11b36322895bf37d8194cf0318b545.ctex"]
 
 [params]
 
