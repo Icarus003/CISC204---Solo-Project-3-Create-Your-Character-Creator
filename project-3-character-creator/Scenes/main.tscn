@@ -1,105 +1,204 @@
 [gd_scene format=3 uid="uid://bpupchlarrosi"]
 
 [ext_resource type="Script" uid="uid://bxjalarhbsd7s" path="res://Scripts/main.gd" id="1_jjgbg"]
-[ext_resource type="Texture2D" uid="uid://bbrkhoeyo0blt" path="res://Assets/icon.svg" id="2_bo1nx"]
-[ext_resource type="Texture2D" uid="uid://bv32jkk7eahxv" path="res://Assets/Room_outline.png" id="3_8gbba"]
+[ext_resource type="Texture2D" uid="uid://b0u8kybyokabk" path="res://Assets/Room_outline.png" id="2_hptm8"]
+[ext_resource type="Texture2D" uid="uid://duvgqgwhk5fa7" path="res://Assets/Beds/BlueBed.png" id="3_6bp64"]
+[ext_resource type="Texture2D" uid="uid://bkelrs33bfopw" path="res://Assets/WallDecor/Painting01.png" id="3_ynf5e"]
+[ext_resource type="Texture2D" uid="uid://48xlu56ahb7u" path="res://Assets/Beds/GreenBed.png" id="4_344ge"]
+[ext_resource type="Texture2D" uid="uid://bs51usub4yxev" path="res://Assets/WallDecor/Painting02.png" id="4_hptm8"]
+[ext_resource type="Texture2D" uid="uid://dbpaudowjfbba" path="res://Assets/WallDecor/Painting03.png" id="5_hptm8"]
+[ext_resource type="Texture2D" uid="uid://dhud8akn0cvgq" path="res://Assets/Beds/OrangeBed.png" id="5_ynf5e"]
+[ext_resource type="Texture2D" uid="uid://byu5jetfomc71" path="res://Assets/WallDecor/Painting04.png" id="6_6iyac"]
+[ext_resource type="Texture2D" uid="uid://blq2ooax42t1l" path="res://Assets/Beds/PinkBed.png" id="6_hptm8"]
+[ext_resource type="Texture2D" uid="uid://v4iyilot330v" path="res://Assets/Beds/PurpleBed.png" id="7_d1ilt"]
+[ext_resource type="Texture2D" uid="uid://dua64qg2by8s3" path="res://Assets/WallDecor/Painting05.png" id="7_fdnlq"]
+[ext_resource type="Texture2D" uid="uid://cxhf3at1php0d" path="res://Assets/Rugs/Rug01.png" id="13_fdnlq"]
+[ext_resource type="Texture2D" uid="uid://bmawh4q6g6f5y" path="res://Assets/Rugs/Rug02.png" id="14_h1bgf"]
+[ext_resource type="Texture2D" uid="uid://ds4o6662dbr55" path="res://Assets/Rugs/Rug03.png" id="15_b3802"]
+[ext_resource type="Texture2D" uid="uid://dtp5r8yalcafj" path="res://Assets/Rugs/Rug04.png" id="16_fevyy"]
+[ext_resource type="Texture2D" uid="uid://ba3sa686mpvoo" path="res://Assets/Rugs/Rug05.png" id="17_hibaj"]
+[ext_resource type="FontFile" uid="uid://3bd3hnymlijs" path="res://Assets/Fonts/Minecraft.ttf" id="18_b3802"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_fevyy"]
+font = ExtResource("18_b3802")
 
 [node name="Main" type="Node2D" unique_id=268473661]
 script = ExtResource("1_jjgbg")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1442806301]
-position = Vector2(206, 154)
-zoom = Vector2(2.8, 2.1)
+position = Vector2(329, 185)
+zoom = Vector2(1.8, 1.8)
 
 [node name="Buttons" type="Node" parent="." unique_id=1522756435]
 
-[node name="HairBack" type="Button" parent="Buttons" unique_id=537886788]
-offset_left = 843.0
-offset_top = 102.0
-offset_right = 925.0
-offset_bottom = 133.0
-text = "Hair Back"
-
-[node name="HairForward" type="Button" parent="Buttons" unique_id=1476572154]
-offset_left = 1242.0
-offset_top = 107.0
-offset_right = 1352.0
-offset_bottom = 138.0
-size_flags_horizontal = 8
-size_flags_vertical = 8
-text = "Hair Forward"
-
-[node name="TorsoBack" type="Button" parent="Buttons" unique_id=747760962]
-offset_left = 843.0
-offset_top = 151.0
-offset_right = 936.0
-offset_bottom = 182.0
-text = "Torso Back"
-
-[node name="TorsoForward" type="Button" parent="Buttons" unique_id=997983416]
-offset_left = 1242.0
-offset_top = 156.0
-offset_right = 1362.0
-offset_bottom = 187.0
-size_flags_horizontal = 8
-size_flags_vertical = 8
-text = "Torso Forward"
+[node name="BedBackButton" type="Button" parent="Buttons" unique_id=537886788]
+z_index = 5
+offset_left = 407.0
+offset_top = 58.0
+offset_right = 489.0
+offset_bottom = 89.0
+text = "<-"
 metadata/_edit_use_anchors_ = true
 
-[node name="LegsBack" type="Button" parent="Buttons" unique_id=1262416678]
-offset_left = 843.0
-offset_top = 207.0
-offset_right = 936.0
-offset_bottom = 238.0
-text = "Legs Back"
-
-[node name="LegsForward" type="Button" parent="Buttons" unique_id=1236859468]
-offset_left = 1242.0
-offset_top = 212.0
-offset_right = 1362.0
-offset_bottom = 243.0
+[node name="BedForwardButton" type="Button" parent="Buttons" unique_id=1476572154]
+z_index = 5
+offset_left = 497.0
+offset_top = 59.0
+offset_right = 607.0
+offset_bottom = 90.0
 size_flags_horizontal = 8
 size_flags_vertical = 8
-text = "Legs Forward"
+text = "->"
 metadata/_edit_use_anchors_ = true
 
-[node name="Heads" type="Node" parent="." unique_id=1420016399]
+[node name="PaintingBackButton" type="Button" parent="Buttons" unique_id=747760962]
+z_index = 5
+offset_left = 394.0
+offset_top = 181.0
+offset_right = 487.0
+offset_bottom = 212.0
+text = "<-"
+metadata/_edit_use_anchors_ = true
 
-[node name="Head1" type="Sprite2D" parent="Heads" unique_id=1561925799]
-position = Vector2(761, 54)
-texture = ExtResource("2_bo1nx")
+[node name="PaintingForwardButton" type="Button" parent="Buttons" unique_id=997983416]
+z_index = 5
+offset_left = 499.0
+offset_top = 183.0
+offset_right = 619.0
+offset_bottom = 214.0
+size_flags_horizontal = 8
+size_flags_vertical = 8
+text = "->"
+metadata/_edit_use_anchors_ = true
 
-[node name="Head2" type="Sprite2D" parent="Heads" unique_id=295896449]
-modulate = Color(1, 0, 1, 1)
-position = Vector2(759, 54)
-texture = ExtResource("2_bo1nx")
+[node name="RugBackButton" type="Button" parent="Buttons" unique_id=1262416678]
+z_index = 5
+offset_left = 410.0
+offset_top = 284.0
+offset_right = 503.0
+offset_bottom = 315.0
+text = "<-"
+metadata/_edit_use_anchors_ = true
 
-[node name="Head3" type="Sprite2D" parent="Heads" unique_id=1079737555]
-modulate = Color(1, 1, 0, 1)
-position = Vector2(761, 54)
-texture = ExtResource("2_bo1nx")
+[node name="RugForwardButton" type="Button" parent="Buttons" unique_id=1236859468]
+z_index = 5
+offset_left = 511.0
+offset_top = 283.0
+offset_right = 631.0
+offset_bottom = 314.0
+size_flags_horizontal = 8
+size_flags_vertical = 8
+text = "->"
+metadata/_edit_use_anchors_ = true
 
-[node name="Head4" type="Sprite2D" parent="Heads" unique_id=2013264726]
-modulate = Color(1, 0, 0, 1)
-position = Vector2(759, 54)
-texture = ExtResource("2_bo1nx")
+[node name="Labels" type="Node" parent="." unique_id=804602490]
 
-[node name="Head5" type="Sprite2D" parent="Heads" unique_id=2079360241]
-modulate = Color(0.8784314, 0.49803922, 0.47058824, 1)
-position = Vector2(759, 54)
-texture = ExtResource("2_bo1nx")
+[node name="BedLabel" type="Label" parent="Labels" unique_id=2014771879]
+z_index = 5
+offset_left = 454.0
+offset_top = 32.0
+offset_right = 584.0
+offset_bottom = 48.0
+size_flags_horizontal = 4
+text = "Change Bed:"
+label_settings = SubResource("LabelSettings_fevyy")
+horizontal_alignment = 1
 
-[node name="Wall Decor" type="Node" parent="." unique_id=1527159949]
+[node name="PaintingLabel" type="Label" parent="Labels" unique_id=444833786]
+z_index = 5
+offset_left = 454.0
+offset_top = 255.0
+offset_right = 584.0
+offset_bottom = 271.0
+text = "Change Rug:"
+label_settings = SubResource("LabelSettings_fevyy")
+horizontal_alignment = 1
 
-[node name="Beds" type="Node" parent="." unique_id=2031906915]
+[node name="RugLabel" type="Label" parent="Labels" unique_id=1287580457]
+z_index = 5
+offset_left = 454.0
+offset_top = 148.0
+offset_right = 584.0
+offset_bottom = 164.0
+text = "Change Painting:"
+label_settings = SubResource("LabelSettings_fevyy")
+horizontal_alignment = 1
 
-[node name="RoomOutline" type="Sprite2D" parent="." unique_id=1677815171]
-position = Vector2(251, 151)
-texture = ExtResource("3_8gbba")
+[node name="RoomElements" type="Node" parent="." unique_id=580263463]
 
-[connection signal="pressed" from="Buttons/HairBack" to="." method="_on_hair_back_pressed"]
-[connection signal="pressed" from="Buttons/HairForward" to="." method="_on_hair_forward_pressed"]
-[connection signal="pressed" from="Buttons/TorsoBack" to="." method="_on_torso_back_pressed"]
-[connection signal="pressed" from="Buttons/TorsoForward" to="." method="_on_torso_forward_pressed"]
-[connection signal="pressed" from="Buttons/LegsBack" to="." method="_on_legs_back_pressed"]
-[connection signal="pressed" from="Buttons/LegsForward" to="." method="_on_legs_forward_pressed"]
+[node name="RoomOutline" type="Sprite2D" parent="RoomElements" unique_id=720863079]
+position = Vector2(251, 185)
+texture = ExtResource("2_hptm8")
+
+[node name="Paintings" type="Node" parent="RoomElements" unique_id=1527159949]
+
+[node name="Painting01" type="Sprite2D" parent="RoomElements/Paintings" unique_id=2000775558]
+position = Vector2(77, 105)
+texture = ExtResource("3_ynf5e")
+
+[node name="Painting02" type="Sprite2D" parent="RoomElements/Paintings" unique_id=1988871146]
+position = Vector2(77, 105)
+texture = ExtResource("4_hptm8")
+
+[node name="Painting03" type="Sprite2D" parent="RoomElements/Paintings" unique_id=847749686]
+position = Vector2(77, 105)
+texture = ExtResource("5_hptm8")
+
+[node name="Painting04" type="Sprite2D" parent="RoomElements/Paintings" unique_id=704203099]
+position = Vector2(77, 105)
+texture = ExtResource("6_6iyac")
+
+[node name="Painting05" type="Sprite2D" parent="RoomElements/Paintings" unique_id=1075203434]
+position = Vector2(83, 102)
+texture = ExtResource("7_fdnlq")
+
+[node name="Beds" type="Node" parent="RoomElements" unique_id=2031906915]
+
+[node name="BlueBed" type="Sprite2D" parent="RoomElements/Beds" unique_id=1935791367]
+position = Vector2(163, 162)
+texture = ExtResource("3_6bp64")
+
+[node name="GreenBed" type="Sprite2D" parent="RoomElements/Beds" unique_id=145086330]
+position = Vector2(163, 162)
+texture = ExtResource("4_344ge")
+
+[node name="OrangeBed" type="Sprite2D" parent="RoomElements/Beds" unique_id=765508724]
+position = Vector2(163, 162)
+texture = ExtResource("5_ynf5e")
+
+[node name="PinkBed" type="Sprite2D" parent="RoomElements/Beds" unique_id=306416922]
+position = Vector2(163, 162)
+texture = ExtResource("6_hptm8")
+
+[node name="PurpleBed" type="Sprite2D" parent="RoomElements/Beds" unique_id=1401325980]
+position = Vector2(163, 162)
+texture = ExtResource("7_d1ilt")
+
+[node name="Rugs" type="Node" parent="RoomElements" unique_id=1774460632]
+
+[node name="Rug01" type="Sprite2D" parent="RoomElements/Rugs" unique_id=2009637858]
+position = Vector2(199, 205)
+texture = ExtResource("13_fdnlq")
+
+[node name="Rug02" type="Sprite2D" parent="RoomElements/Rugs" unique_id=353151106]
+position = Vector2(199, 205)
+texture = ExtResource("14_h1bgf")
+
+[node name="Rug03" type="Sprite2D" parent="RoomElements/Rugs" unique_id=1251936665]
+position = Vector2(204, 213)
+texture = ExtResource("15_b3802")
+
+[node name="Rug04" type="Sprite2D" parent="RoomElements/Rugs" unique_id=1956255181]
+position = Vector2(202, 213)
+texture = ExtResource("16_fevyy")
+
+[node name="Rug05" type="Sprite2D" parent="RoomElements/Rugs" unique_id=228906283]
+position = Vector2(217, 221)
+texture = ExtResource("17_hibaj")
+
+[connection signal="pressed" from="Buttons/BedBackButton" to="." method="_on_bed_back_button_pressed"]
+[connection signal="pressed" from="Buttons/BedForwardButton" to="." method="_on_bed_forward_button_pressed"]
+[connection signal="pressed" from="Buttons/PaintingBackButton" to="." method="_on_painting_back_button_pressed"]
+[connection signal="pressed" from="Buttons/PaintingForwardButton" to="." method="_on_painting_forward_button_pressed"]
+[connection signal="pressed" from="Buttons/RugBackButton" to="." method="_on_rug_back_button_pressed"]
+[connection signal="pressed" from="Buttons/RugForwardButton" to="." method="_on_rug_forward_button_pressed"]

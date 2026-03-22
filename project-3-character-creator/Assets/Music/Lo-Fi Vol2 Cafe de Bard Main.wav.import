@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://wc1bvvl5ykbc"
+path="res://.godot/imported/Lo-Fi Vol2 Cafe de Bard Main.wav-34b28cd8e44cb46754f22020c72969ad.sample"
+
+[deps]
+
+source_file="res://Assets/Music/Lo-Fi Vol2 Cafe de Bard Main.wav"
+dest_files=["res://.godot/imported/Lo-Fi Vol2 Cafe de Bard Main.wav-34b28cd8e44cb46754f22020c72969ad.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=2
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

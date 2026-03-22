@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://berje1dci7cx4"]
+
+[ext_resource type="AudioStream" uid="uid://wc1bvvl5ykbc" path="res://Assets/Music/Lo-Fi Vol2 Cafe de Bard Main.wav" id="1_kbhl5"]
+
+[node name="Gamemanager" type="Node" unique_id=575222307]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1341416282]
+stream = ExtResource("1_kbhl5")
+autoplay = true
