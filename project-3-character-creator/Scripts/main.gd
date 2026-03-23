@@ -15,6 +15,7 @@ var current_beds_index: int = 0
 var current_paintings_index: int = 0
 var current_rugs_index: int = 0
 
+var save_state = ''
 
 func _ready():
 	beds = [$RoomElements/Beds/BlueBed,$RoomElements/Beds/GreenBed,$RoomElements/Beds/OrangeBed,$RoomElements/Beds/PinkBed,$RoomElements/Beds/PurpleBed]
@@ -60,7 +61,6 @@ func _on_bed_forward_button_pressed():
 	change_index_forward(current_beds_index)
 	current_beds_index = change_index_forward(current_beds_index)
 	update_arrays()
-	print(current_beds_index)
 
 func _on_painting_back_button_pressed():
 	change_index_back(current_paintings_index)
@@ -81,4 +81,25 @@ func _on_rug_back_button_pressed():
 func _on_rug_forward_button_pressed():
 	change_index_forward(current_rugs_index)
 	current_rugs_index = change_index_forward(current_rugs_index)
+	update_arrays()
+
+#Saving function
+func save():
+	save_state = str(current_beds_index) + str(current_paintings_index) + str(current_rugs_index)
+	print("saved: " + save_state)
+
+# Load previous save function
+func load_save():
+	current_beds_index = int(save_state[0])
+	current_paintings_index = int(save_state[1])
+	current_rugs_index = int(save_state[2])
+	print("Loaded: " + save_state)
+	
+# Saves current state when pressed
+func _on_save_button_pressed() -> void:
+	save()
+
+# Loads state that was saved
+func _on_load_button_pressed() -> void:
+	load_save()
 	update_arrays()
