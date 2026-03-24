@@ -33,19 +33,19 @@ zoom = Vector2(1.8, 1.8)
 
 [node name="BedBackButton" type="Button" parent="Buttons" unique_id=537886788]
 z_index = 5
-offset_left = 407.0
-offset_top = 58.0
-offset_right = 489.0
-offset_bottom = 89.0
+offset_left = 414.0
+offset_top = 39.0
+offset_right = 496.0
+offset_bottom = 70.0
 text = "<-"
 metadata/_edit_use_anchors_ = true
 
 [node name="BedForwardButton" type="Button" parent="Buttons" unique_id=1476572154]
 z_index = 5
-offset_left = 497.0
-offset_top = 59.0
-offset_right = 607.0
-offset_bottom = 90.0
+offset_left = 504.0
+offset_top = 40.0
+offset_right = 614.0
+offset_bottom = 71.0
 size_flags_horizontal = 8
 size_flags_vertical = 8
 text = "->"
@@ -53,39 +53,53 @@ metadata/_edit_use_anchors_ = true
 
 [node name="PaintingBackButton" type="Button" parent="Buttons" unique_id=747760962]
 z_index = 5
-offset_left = 394.0
-offset_top = 181.0
-offset_right = 487.0
-offset_bottom = 212.0
+offset_left = 401.0
+offset_top = 110.0
+offset_right = 494.0
+offset_bottom = 141.0
 text = "<-"
 metadata/_edit_use_anchors_ = true
 
 [node name="PaintingForwardButton" type="Button" parent="Buttons" unique_id=997983416]
 z_index = 5
-offset_left = 499.0
-offset_top = 183.0
-offset_right = 619.0
-offset_bottom = 214.0
+offset_left = 506.0
+offset_top = 112.0
+offset_right = 626.0
+offset_bottom = 143.0
 size_flags_horizontal = 8
 size_flags_vertical = 8
 text = "->"
 metadata/_edit_use_anchors_ = true
 
+[node name="PaintingSizeForwardButton" type="Button" parent="Buttons" unique_id=394647035]
+offset_left = 519.0
+offset_top = 178.0
+offset_right = 542.0
+offset_bottom = 209.0
+text = "->"
+
+[node name="PaintingSizeBackButton" type="Button" parent="Buttons" unique_id=1695611054]
+offset_left = 466.0
+offset_top = 177.0
+offset_right = 489.0
+offset_bottom = 208.0
+text = "<-"
+
 [node name="RugBackButton" type="Button" parent="Buttons" unique_id=1262416678]
 z_index = 5
-offset_left = 410.0
-offset_top = 284.0
-offset_right = 503.0
-offset_bottom = 315.0
+offset_left = 402.0
+offset_top = 268.0
+offset_right = 495.0
+offset_bottom = 299.0
 text = "<-"
 metadata/_edit_use_anchors_ = true
 
 [node name="RugForwardButton" type="Button" parent="Buttons" unique_id=1236859468]
 z_index = 5
-offset_left = 511.0
-offset_top = 283.0
-offset_right = 631.0
-offset_bottom = 314.0
+offset_left = 503.0
+offset_top = 267.0
+offset_right = 623.0
+offset_bottom = 298.0
 size_flags_horizontal = 8
 size_flags_vertical = 8
 text = "->"
@@ -110,32 +124,42 @@ text = "Load"
 
 [node name="BedLabel" type="Label" parent="Labels" unique_id=2014771879]
 z_index = 5
-offset_left = 454.0
-offset_top = 32.0
-offset_right = 584.0
-offset_bottom = 48.0
+offset_left = 442.0
+offset_top = 18.0
+offset_right = 572.0
+offset_bottom = 34.0
 size_flags_horizontal = 4
 text = "Change Bed:"
 label_settings = SubResource("LabelSettings_fevyy")
 horizontal_alignment = 1
 
-[node name="PaintingLabel" type="Label" parent="Labels" unique_id=444833786]
+[node name="PaintingLabel" type="Label" parent="Labels" unique_id=1287580457]
 z_index = 5
-offset_left = 454.0
-offset_top = 255.0
-offset_right = 584.0
-offset_bottom = 271.0
-text = "Change Rug:"
+offset_left = 442.0
+offset_top = 85.0
+offset_right = 572.0
+offset_bottom = 101.0
+text = "Change Painting:"
 label_settings = SubResource("LabelSettings_fevyy")
 horizontal_alignment = 1
 
-[node name="RugLabel" type="Label" parent="Labels" unique_id=1287580457]
+[node name="PaintingSizeLabel" type="Label" parent="Labels" unique_id=95533946]
 z_index = 5
-offset_left = 454.0
-offset_top = 148.0
-offset_right = 584.0
-offset_bottom = 164.0
-text = "Change Painting:"
+offset_left = 423.0
+offset_top = 150.0
+offset_right = 589.0
+offset_bottom = 166.0
+text = "Change Painting Size:"
+label_settings = SubResource("LabelSettings_fevyy")
+horizontal_alignment = 1
+
+[node name="RugLabel" type="Label" parent="Labels" unique_id=444833786]
+z_index = 5
+offset_left = 442.0
+offset_top = 234.0
+offset_right = 572.0
+offset_bottom = 250.0
+text = "Change Rug:"
 label_settings = SubResource("LabelSettings_fevyy")
 horizontal_alignment = 1
 
@@ -217,6 +241,8 @@ texture = ExtResource("17_hibaj")
 [connection signal="pressed" from="Buttons/BedForwardButton" to="." method="_on_bed_forward_button_pressed"]
 [connection signal="pressed" from="Buttons/PaintingBackButton" to="." method="_on_painting_back_button_pressed"]
 [connection signal="pressed" from="Buttons/PaintingForwardButton" to="." method="_on_painting_forward_button_pressed"]
+[connection signal="pressed" from="Buttons/PaintingSizeForwardButton" to="." method="_on_painting_size_forward_button_pressed"]
+[connection signal="pressed" from="Buttons/PaintingSizeBackButton" to="." method="_on_painting_size_back_button_pressed"]
 [connection signal="pressed" from="Buttons/RugBackButton" to="." method="_on_rug_back_button_pressed"]
 [connection signal="pressed" from="Buttons/RugForwardButton" to="." method="_on_rug_forward_button_pressed"]
 [connection signal="pressed" from="Buttons/SaveButton" to="." method="_on_save_button_pressed"]

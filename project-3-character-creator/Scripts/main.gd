@@ -15,6 +15,7 @@ var current_beds_index: int = 0
 var current_paintings_index: int = 0
 var current_rugs_index: int = 0
 
+# Initial var for save state
 var save_state = ''
 
 func _ready():
@@ -96,10 +97,24 @@ func load_save():
 	print("Loaded: " + save_state)
 	
 # Saves current state when pressed
-func _on_save_button_pressed() -> void:
+func _on_save_button_pressed():
 	save()
 
 # Loads state that was saved
-func _on_load_button_pressed() -> void:
+func _on_load_button_pressed():
 	load_save()
 	update_arrays()
+
+func increase_painting_size(painting_array):
+	painting_array[current_paintings_index].scale += Vector2(.5, .5)
+
+func decrease_painting_size(painting_array):
+	painting_array[current_paintings_index].scale -= Vector2(.5, .5)
+
+# Functionality for size increase and decrease buttons
+func _on_painting_size_forward_button_pressed():
+	increase_painting_size(paintings)
+
+
+func _on_painting_size_back_button_pressed():
+	decrease_painting_size(paintings)
