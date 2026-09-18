@@ -1,2 +1,2 @@
-# CISC204-S26-Project3-Template
+# CISC204 - Solo Project 3: Create Your Character Creator
 Empty Godot project for Project 3
